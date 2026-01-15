@@ -157,7 +157,7 @@ export default function SupportPage() {
                 <div className="relative w-full max-w-[320px] sm:max-w-[400px]">
                   <div className="absolute -inset-4 bg-forest-green/10 blur-3xl rounded-full" />
                   <Image
-                    src="/app-preview-img/home-screen.png"
+                    src="/app-preview-img/home-screen0.png"
                     alt="Restock Dashboard"
                     width={400}
                     height={866}
