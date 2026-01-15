@@ -128,13 +128,13 @@ export default function SupportPage() {
                   A high-performance, offline-first restocking utility for small retailers. 
                   Zero-latency inventory logging powered by edge-AI document parsing.
                 </p>
-                <div className="mt-10 flex items-center justify-center lg:justify-start gap-x-6">
+                <div className="mt-10 flex flex-col items-center lg:items-start gap-4">
                   <a
                     href="https://apps.apple.com/app/restock/id000000000" // TODO: Insert real App Store URL
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Download on the App Store"
-                    className="inline-flex items-center gap-3 rounded-2xl bg-forest-green px-8 py-4 text-lg font-semibold text-white shadow-lg hover:bg-[#217821] transition-colors"
+                    className="inline-flex items-center gap-3 rounded-2xl bg-forest-green px-8 py-4 text-lg font-semibold text-white shadow-lg hover:bg-[#217821] transition-all hover:scale-[1.02] active:scale-[0.98]"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -151,6 +151,12 @@ export default function SupportPage() {
                     </svg>
                     Download on the App Store
                   </a>
+                  <Link 
+                    href="/privacy"
+                    className="text-sm font-medium text-charcoal/60 hover:text-forest-green underline decoration-charcoal/20 underline-offset-4 transition-colors ml-1"
+                  >
+                    View Privacy Policy
+                  </Link>
                 </div>
               </div>
               <div className="mt-16 lg:mt-0 lg:col-span-6 flex justify-center lg:justify-end">

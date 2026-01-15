@@ -15,6 +15,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Restock — Support | The Offline-First Restocking App",
   description: "Get help with Restock, the inventory app for small retailers. FAQs, contact support, and learn how the app works.",
+  metadataBase: new URL("https://restockapp.help"),
+  alternates: {
+    canonical: "/support",
+  },
   openGraph: {
     title: "Restock — Support | The Offline-First Restocking App",
     description: "Get help with Restock, the inventory app for small retailers. FAQs, contact support, and learn how the app works.",

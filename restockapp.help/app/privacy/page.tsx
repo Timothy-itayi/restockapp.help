@@ -34,16 +34,33 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-dark-forest">Image Processing</h2>
+            <h2 className="text-xl font-bold text-dark-forest">Image Processing & AI</h2>
             <p className="mt-2">
-              When you use the "Log" feature, images are sent to our secure servers (Cloudflare Workers) to be processed by AI for text extraction. These images are processed in memory and are not stored on our servers after the response is sent back to your device.
+              When you use the "Log" feature, images are transmitted via encrypted HTTPS to our secure processing endpoint (hosted on Cloudflare Workers). We use Groq Vision (LLM-based OCR) to extract structured text. 
+            </p>
+            <p className="mt-2 text-sm italic">
+              Crucially: Images are processed in volatile memory and are purged immediately after the extraction is complete. We do not use your images to train AI models, and we do not store them on any persistent disk.
             </p>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-dark-forest">Email Delivery</h2>
+            <h2 className="text-xl font-bold text-dark-forest">Email Delivery & SMTP</h2>
             <p className="mt-2">
-              Emails are sent via our infrastructure. We store only the minimum logs required to ensure delivery and prevent abuse. We do not read the content of your reorder emails for any purpose other than delivery.
+              To send reorder emails, the app sends the drafted email content and recipient details to our stateless mailing worker. We use Resend as our SMTP provider. We do not retain copies of your sent emails once delivery is confirmed by the upstream mail server.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-bold text-dark-forest">Children's Privacy</h2>
+            <p className="mt-2">
+              Restock does not knowingly collect any information from children under the age of 13. Since the app is an inventory tool for business owners and stores no data on our servers, we do not have a mechanism to track the age of our users.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-bold text-dark-forest">Changes to This Policy</h2>
+            <p className="mt-2">
+              We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.
             </p>
           </section>
 
