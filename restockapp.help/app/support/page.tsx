@@ -292,7 +292,7 @@ export default function SupportPage() {
                   If you encounter parsing errors or network failures, contact our engineering support.
                 </p>
                 <div className="mt-12 flex flex-col items-center gap-6">
-                  <a href="mailto:support@restockapp.help" className="text-3xl font-black hover:text-dark-forest transition-colors sm:text-4xl">
+                  <a href="mailto:timothy_itayi@icloud.com" className="text-3xl font-black hover:text-dark-forest transition-colors sm:text-4xl">
                     support@restockapp.help
                   </a>
                   <p className="text-sm text-white/60 uppercase tracking-widest font-bold">
