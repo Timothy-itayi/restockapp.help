@@ -105,8 +105,8 @@ export default function SupportPage() {
             </div>
             <div className="hidden md:block">
               <div className="flex items-center gap-8">
-                <a href="#architecture" className="text-sm font-medium hover:text-forest-green transition-colors">Architecture</a>
-                <a href="#workflow" className="text-sm font-medium hover:text-forest-green transition-colors">Workflow</a>
+                <a href="#features" className="text-sm font-medium hover:text-forest-green transition-colors">Features</a>
+                <a href="#architecture" className="text-sm font-medium hover:text-forest-green transition-colors">How It Works</a>
                 <a href="#faq" className="text-sm font-medium hover:text-forest-green transition-colors">FAQ</a>
                 <a href="#contact" className="text-sm font-medium hover:text-forest-green transition-colors">Support</a>
               </div>
@@ -122,11 +122,10 @@ export default function SupportPage() {
             <div className="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
               <div className="lg:col-span-6 text-center lg:text-left">
                 <h1 className="text-5xl font-extrabold tracking-tight text-dark-forest sm:text-7xl lg:text-8xl">
-                  Walk.<br />Log.<br />Send.
+                  Restock.<br />Walk.<br />Log.<br />Share.
                 </h1>
                 <p className="mt-8 text-xl leading-8 text-charcoal/80 max-w-xl mx-auto lg:mx-0">
-                  A high-performance, offline-first restocking utility for small retailers. 
-                  Zero-latency inventory logging powered by edge-AI document parsing.
+                  The offline-first inventory scanner for pros. Scan your shelf, export to WhatsApp.
                 </p>
                 <div className="mt-10 flex flex-col items-center lg:items-start gap-4">
                   <a
@@ -176,29 +175,29 @@ export default function SupportPage() {
           </div>
         </section>
 
-        {/* Technical Architecture Section */}
+        {/* How It Works Section */}
         <section id="architecture" className="py-24 bg-dark-forest text-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div>
-                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-6 leading-tight">"Client-Heavy, Serverless-Light"</h2>
+                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-6 leading-tight">How It Works</h2>
                 <p className="text-lg text-white/70 mb-8 leading-relaxed">
-                  Restock 2.0 discards traditional cloud-sync bloat in favor of a lean, 
-                  stateless architecture designed for speed and reliability in low-connectivity environments.
+                  Restock is built for professionals who need speed and reliability. 
+                  Your data stays on your device. We only process your photos when you need them.
                 </p>
                 <div className="space-y-6">
                   {[
                     {
-                      title: "Offline-First Persistence",
-                      desc: "All session data, supplier lists, and product history are persisted locally via Zustand + AsyncStorage."
+                      title: "Offline-First",
+                      desc: "All your inventory data, supplier lists, and session history are stored locally on your device. No cloud sync required."
                     },
                     {
-                      title: "Edge AI Parsing",
-                      desc: "Physical catalogs are processed via Groq Vision. Our backend applies a validation layer to ensure data integrity."
+                      title: "Smart AI Scanning",
+                      desc: "Powered by Groq Vision. Point your camera at your inventory list and our AI extracts products and quantities automatically."
                     },
                     {
-                      title: "Stateless Backend",
-                      desc: "We utilize Cloudflare Workers for extraction and Resend for delivery. No central database is maintained."
+                      title: "Export Anywhere",
+                      desc: "Share your formatted orders via WhatsApp, email, or any app. Your data, your choice of how to send it."
                     }
                   ].map((feat, i) => (
                     <div key={i} className="bg-white/5 p-6 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors">
@@ -215,27 +214,26 @@ export default function SupportPage() {
           </div>
         </section>
 
-        {/* Workflow Section */}
-        <section id="workflow" className="py-24 bg-forest-green/5">
+        {/* Features Section */}
+        <section id="features" className="py-24 bg-forest-green/5">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-20">
-              <h2 className="text-3xl font-bold tracking-tight text-dark-forest sm:text-4xl">System Workflow</h2>
-              <p className="mt-4 text-charcoal/60">How we handle your data from walk to send.</p>
+              <h2 className="text-3xl font-bold tracking-tight text-dark-forest sm:text-4xl">Why Restock?</h2>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
-                  title: "1. Zero-Auth Onboarding",
-                  desc: "Users bypass sign-up. Personal and store profiles are generated and encrypted locally. App utility starts in < 60 seconds."
+                  title: "Pay Once, Use Forever",
+                  desc: "No subscriptions. Buy it once and it's yours. No ads, no data selling, no recurring fees."
                 },
                 {
-                  title: "2. The 'Magic' Flow",
-                  desc: "Supports image-only ingestion. Llama-based OCR extracts structured JSON with 95%+ accuracy directly from your photos."
+                  title: "Smart AI Scanning",
+                  desc: "Powered by Groq. Advanced AI reads your handwriting with precision. Just point and shoot."
                 },
                 {
-                  title: "3. Grouped Dispatch",
-                  desc: "Items are auto-grouped into professional HTML templates. Emails are dispatched via our stateless 'send-email' worker."
+                  title: "Your Data, Your Apps",
+                  desc: "Export to anywhere. Share via WhatsApp, email, or any app. Your inventory, your choice."
                 }
               ].map((item, idx) => (
                 <div key={idx} className="bg-white p-8 rounded-[2.5rem] shadow-sm border border-black/5 hover:shadow-md transition-shadow">
@@ -253,16 +251,20 @@ export default function SupportPage() {
         {/* FAQ Section */}
         <section id="faq" className="py-24">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-            <h2 className="text-center text-4xl font-bold tracking-tight text-dark-forest mb-16">Engineering & Data Privacy FAQ</h2>
+            <h2 className="text-center text-4xl font-bold tracking-tight text-dark-forest mb-16">Frequently Asked Questions</h2>
             <div className="grid grid-cols-1 gap-6">
               {[
                 {
-                  q: "Why only image uploads? Where is PDF support?",
-                  a: "Parsing complex PDFs on the edge is fragile. By requiring high-resolution images, we ensure 100% reliability with the Groq Vision API and eliminate heavy native library bloat."
+                  q: "Why does it cost money?",
+                  a: "Restock uses advanced AI to read your handwriting. We charge a small one-time fee to keep the service running without ads or selling your data."
                 },
                 {
-                  q: "How secure is my PII (Personally Identifiable Information)?",
-                  a: "Strict local-first policy. Your details leave the device only in the transient payload sent to the 'send-email' worker. We do not store this data in any database."
+                  q: "Can I email my supplier?",
+                  a: "Yes! Restock formats the order for you. You just tap 'Share' and choose your email app."
+                },
+                {
+                  q: "How secure is my data?",
+                  a: "Strict local-first policy. Your inventory data stays on your device. We only use cloud services to process your photos (AI parsing) and nothing is stored on our servers."
                 },
                 {
                   q: "What happens if I delete the app?",
@@ -270,7 +272,7 @@ export default function SupportPage() {
                 },
                 {
                   q: "Does the app track my location or analytics?",
-                  a: "No. Restock 2.0 has zero tracking scripts, zero location requests, and zero persistent user-identifiers on our backend."
+                  a: "No. Restock has zero tracking scripts, zero location requests, and zero persistent user-identifiers on our backend."
                 }
               ].map((faq, idx) => (
                 <div key={idx} className="p-8 bg-white rounded-3xl border border-black/5 hover:border-forest-green/20 transition-colors">
@@ -287,16 +289,16 @@ export default function SupportPage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="rounded-[3rem] bg-forest-green px-8 py-16 text-center text-white sm:px-16 sm:py-24 relative overflow-hidden">
               <div className="relative z-10">
-                <h2 className="mx-auto max-w-2xl text-4xl font-bold tracking-tight">Technical Support</h2>
+                <h2 className="mx-auto max-w-2xl text-4xl font-bold tracking-tight">Need Help?</h2>
                 <p className="mx-auto mt-6 max-w-xl text-lg text-white/80">
-                  If you encounter parsing errors or network failures, contact our engineering support.
+                  Have questions or run into issues? We're here to help.
                 </p>
                 <div className="mt-12 flex flex-col items-center gap-6">
                   <a href="mailto:timothy_itayi@icloud.com" className="text-3xl font-black hover:text-dark-forest transition-colors sm:text-4xl">
                     support@restockapp.help
                   </a>
                   <p className="text-sm text-white/60 uppercase tracking-widest font-bold">
-                    SLA: Response within 48 hours
+                    Response within 48 hours
                   </p>
                 </div>
               </div>
@@ -316,14 +318,14 @@ export default function SupportPage() {
               height={24}
               className="rounded-md"
             />
-            <span className="text-lg font-bold text-dark-forest">Restock 2.0</span>
+            <span className="text-lg font-bold text-dark-forest">Restock</span>
           </div>
           <div className="flex flex-wrap justify-center gap-8 mb-8 text-sm font-medium text-charcoal/60">
             <Link href="/privacy" className="hover:text-forest-green">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-forest-green">Terms of Service</Link>
           </div>
           <p className="text-xs text-charcoal/40 max-w-2xl mx-auto leading-loose">
-            Restock is a stateless utility. Emails are sent via Resend API. 
+            Restock is an offline-first inventory scanner. Your data stays on your device. 
             No product data is sold, tracked, or cached server-side. 
             © 2026 Restock App.
           </p>

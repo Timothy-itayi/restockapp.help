@@ -13,15 +13,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Restock — Support | The Offline-First Restocking App",
-  description: "Get help with Restock, the inventory app for small retailers. FAQs, contact support, and learn how the app works.",
+  title: "Restock — Support | The Offline-First Inventory Scanner",
+  description: "The offline-first inventory scanner for pros. Scan your shelf, export to WhatsApp. Pay once, use forever. No subscriptions.",
   metadataBase: new URL("https://restockapp.help"),
   alternates: {
     canonical: "/support",
   },
   openGraph: {
-    title: "Restock — Support | The Offline-First Restocking App",
-    description: "Get help with Restock, the inventory app for small retailers. FAQs, contact support, and learn how the app works.",
+    title: "Restock — Support | The Offline-First Inventory Scanner",
+    description: "The offline-first inventory scanner for pros. Scan your shelf, export to WhatsApp. Pay once, use forever. No subscriptions.",
     type: "website",
     url: "https://restockapp.help/support",
   },
